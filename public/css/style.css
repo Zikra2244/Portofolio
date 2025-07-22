@@ -1,0 +1,192 @@
+/* ===================================================================
+   PALET WARNA & KONFIGURASI DESAIN
+   =================================================================== */
+:root {
+    --primary-start: #4FD1C5;
+    --primary-end: #24A19C;
+    --secondary: #718096;
+    --text-dark: #2D3748;
+    --text-light: #E2E8F0;
+    --bg-light: #f7fafc;
+    --bg-dark: #1A202C;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+}
+
+[data-theme="dark"] {
+    --primary-start: #24A19C;
+    --primary-end: #4FD1C5;
+    --secondary: #A0AEC0;
+    --text-dark: #E2E8F0;
+    --text-light: #2D3748;
+    --bg-light: #1A202C;
+    --bg-dark: #0f131a;
+    --card-bg: #2D3748;
+    --border-color: #4A5568;
+}
+
+:root {
+    --primary-gradient: linear-gradient(45deg, var(--primary-start), var(--primary-end));
+}
+
+html { scroll-behavior: smooth; }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ================== UTILITIES & COMPONENTS ================== */
+.section { padding: 80px 0; transition: background-color 0.3s ease; }
+.section.bg-light { background-color: var(--bg-light) !important; }
+.section-title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    position: relative;
+    color: var(--text-dark);
+}
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--primary-gradient);
+    border-radius: 2px;
+}
+.btn-primary-custom {
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-primary-custom:hover {
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ================== NAVBAR ================== */
+.navbar {
+    transition: background-color 0.4s ease-out;
+    background-color: transparent;
+}
+.navbar.scrolled {
+    background-color: rgba(26, 32, 44, 0.85);
+    backdrop-filter: blur(10px);
+}
+.navbar-brand, .nav-link { font-weight: 600; color: var(--text-light) !important; }
+[data-theme="light"] .navbar-brand,
+[data-theme="light"] .nav-link { color: var(--text-dark) !important; }
+
+[data-theme="dark"] .navbar.scrolled .nav-link,
+[data-theme="dark"] .navbar.scrolled .navbar-brand { color: var(--text-light) !important; }
+
+.nav-link:hover, .navbar-brand:hover { color: var(--primary-start) !important; }
+
+.theme-toggle-btn {
+    background: none;
+    border: none;
+    color: var(--text-dark);
+    font-size: 1.2rem;
+}
+[data-theme="dark"] .theme-toggle-btn { color: var(--text-light); }
+.navbar.scrolled .theme-toggle-btn { color: var(--text-light); }
+
+/* ================== HERO ================== */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    padding-top: 80px;
+}
+#typed, .typed-cursor { color: var(--primary-start); font-weight: 400; }
+.photo-placeholder {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: var(--primary-gradient);
+    padding: 8px;
+    box-shadow: 0 0 40px rgba(79, 209, 197, 0.2);
+    transition: transform 0.3s ease;
+}
+.photo-placeholder:hover { transform: scale(1.05); }
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--bg-dark);
+}
+
+/* ================== PROJECTS ================== */
+.project-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+.project-card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+.project-card .card-title { color: var(--text-dark); }
+.project-card .card-text {
+    color: var(--secondary);
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+/* ================== TIMELINE ================== */
+.timeline-content {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+}
+/* Anda bisa menambahkan lebih banyak style untuk timeline di sini */
+
+
+/* ================== BACK TO TOP ================== */
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    z-index: 1000;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(10px);
+}
+.back-to-top.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 992px) {
+    .hero { text-align: center; }
+    .photo-placeholder { margin: 40px auto 0; width: 280px; height: 280px;}
+}
