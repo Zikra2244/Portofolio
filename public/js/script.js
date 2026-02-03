@@ -183,4 +183,4 @@ document.addEventListener('DOMContentLoaded', () => {
             // You can add AJAX form submission or other logic
         });
     }
-});
+}); 
