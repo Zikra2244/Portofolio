@@ -182,11 +182,11 @@
     copyright: "All rights reserved.",
 
     typing_words: [
-      "Technology Enthusiast",
-      "IT Infrastructure Enthus",
-      "Frontend Developer",
-      "DevOps Enthusiast",
-      "Blockchain Learner",
+      "Technology Enthusiast.",
+      "IT Infrastructure Enthusiast.",
+      "Frontend Developer.",
+      "DevOps Enthusiast.",
+      "Blockchain Learner.",
     ],
   },
   id: {

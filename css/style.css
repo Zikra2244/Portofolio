@@ -1614,7 +1614,6 @@ h4 {
   z-index: 3;
 }
 
-
 .language-dropdown:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
@@ -1764,7 +1763,7 @@ h4 {
     margin: 10px 0 !important;
     width: fit-content !important;
   }
-  
+
   .dropdown-menu {
     position: static !important;
     transform: none !important;
