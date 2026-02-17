@@ -1,0 +1,35 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy to server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ~/portofolio-project
+
+            git pull origin main
+
+            # Menghentikan dan menghapus container lama (jika ada)
+            docker stop portofolio-container || true
+            docker rm portofolio-container || true
+
+            # Membangun image Docker baru
+            docker build -t portofolio-app .
+
+            # Menjalankan container baru
+            docker run -d --restart always --name portofolio-container -p 3000:3000 portofolio-app

@@ -1,0 +1,1028 @@
+﻿<!doctype html>
+<html lang="id" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Muhammad Zikra Fadly</title>
+    <meta name="title" content="Portfolio | Muhammad Zikra Fadly" />
+    <meta
+      name="description"
+      content="Portfolio Muhammad Zikra Fadly - IT Student, Web Developer, and DevOps Enthusiast. Experience in Blockchain, AI, and IT Infrastructure."
+    />
+    <meta
+      name="keywords"
+      content="Muhammad Zikra Fadly, Web Developer, DevOps, Blockchain, Telkom University, Portfolio"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <script>
+      if (!localStorage.getItem("theme")) {
+        localStorage.setItem("theme", "dark");
+      }
+      document.documentElement.setAttribute(
+        "data-theme",
+        localStorage.getItem("theme"),
+      );
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/translations.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">MZF</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#about" data-i18n="nav_about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#skills" data-i18n="nav_skills"
+                >Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#projects" data-i18n="nav_projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link px-3"
+                href="#experience"
+                data-i18n="nav_experience"
+                >Experience</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link px-3"
+                href="#organization"
+                data-i18n="nav_organization"
+                >Organization</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link px-3"
+                href="#education"
+                data-i18n="nav_education"
+                >Education</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#contact" data-i18n="nav_contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <button id="theme-toggle" class="btn theme-toggle-btn ms-3">
+            <i class="bi bi-moon-stars-fill"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1000">
+            <p class="lead mb-2 glow" data-i18n="hero_greeting">Hello, I'm</p>
+            <h1 class="mb-3" data-i18n="hero_name">Muhammad Zikra Fadly</h1>
+            <h3 class="text-primary mb-4" data-i18n="hero_title">
+              Technology Enthusiast
+            </h3>
+            <div class="typed-text mb-4">
+              <span id="typed"></span>
+            </div>
+            <div class="hero-btns">
+              <a
+                href="#contact"
+                class="btn btn-primary btn-lg pulse"
+                data-i18n="hero_btn_contact"
+                >Contact Me</a
+              >
+              <a
+                href="#projects"
+                class="btn btn-outline-primary btn-lg"
+                data-i18n="hero_btn_projects"
+                >View Projects</a
+              >
+              <a
+                href="#experience"
+                class="btn btn-outline-primary btn-lg"
+                data-i18n="hero_btn_experience"
+                >View Experience</a
+              >
+            </div>
+          </div>
+          <div
+            class="col-lg-5"
+            data-aos="fade-left"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <div class="profile-container floating">
+              <img
+                src="foto_profil.jpg"
+                alt="Foto Muhammad Zikra Fadly"
+                class="profile-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title text-center" data-text="About">
+            <span data-i18n="about_title">About</span>
+            <span data-i18n="about_title_span">Me</span>
+          </h2>
+          <div
+            class="about-content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <p class="lead text-center" data-i18n="about_text">
+              Information Technology student .....
+            </p>
+            <div
+              class="stats-container"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label" data-i18n="about_stats_1">
+                  Organizations & Committees
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label" data-i18n="about_stats_2">Projects</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section bg-alt">
+        <div class="container">
+          <h2 class="section-title text-center" data-text="Skills">
+            <span data-i18n="skills_title">Technical</span>
+            <span data-i18n="skills_title_span">Skills</span>
+          </h2>
+          <div class="row justify-content-center g-4">
+            <div class="col-md-5" data-aos="fade-up" data-aos-duration="1000">
+              <div class="skill-card">
+                <h3 class="skill-category" data-i18n="skills_technical">
+                  Technical
+                </h3>
+                <ul class="skill-list">
+                  <li data-i18n="skills_tech_1">
+                    Microsoft Office (Word, Excel, PowerPoint).
+                  </li>
+                  <li data-i18n="skills_tech_2">
+                    Google Workspace (Docs, Sheets, Slides).
+                  </li>
+                  <li data-i18n="skills_tech_3">
+                    Programming languages HTML, CSS, JavaScript, Java, PHP,
+                    Python, Go, Dart, Solidity.
+                  </li>
+                  <li data-i18n="skills_tech_4">
+                    Frontend frameworks React JS, Vue JS, Next JS.
+                  </li>
+                  <li data-i18n="skills_tech_5">
+                    Backend frameworks Laravel, Express.js, Spring Boot Java.
+                  </li>
+                  <li data-i18n="skills_tech_6">
+                    Mobile development framework Flutter (Dart).
+                  </li>
+                  <li data-i18n="skills_tech_7">
+                    Relational databases MySQL, PostgreSQL, SQL Server, Oracle
+                    Database, cloud database Supabase.
+                  </li>
+                  <li data-i18n="skills_tech_8">
+                    Linux Ubuntu, web hosting control panel, Git/GitHub, network
+                    & server monitoring tools, Docker container.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="col-md-5"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <div class="skill-card">
+                <h3 class="skill-category" data-i18n="skills_nontech">
+                  Non-Technical
+                </h3>
+                <ul class="skill-list">
+                  <li data-i18n="skills_nontech_1">Organizational Skills</li>
+                  <li data-i18n="skills_nontech_2">High Self-Confidence</li>
+                  <li data-i18n="skills_nontech_3">Leadership</li>
+                  <li data-i18n="skills_nontech_4">Responsibility</li>
+                  <li data-i18n="skills_nontech_5">Adaptability</li>
+                  <li data-i18n="skills_nontech_6">Public Relations</li>
+                  <li data-i18n="skills_nontech_7">Fundraising</li>
+                  <li data-i18n="skills_nontech_8">Logistics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title text-center" data-text="Projects">
+            <span data-i18n="projects_title">Featured</span>
+            <span data-i18n="projects_title_span">Projects</span>
+          </h2>
+          <div class="row g-4">
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="project-card">
+                <span class="project-badge" data-i18n="project_badge_web3"
+                  >Web3 (DAPP)</span
+                >
+                <div class="project-content">
+                  <h3 data-i18n="project_1_title">
+                    Digital Diploma Tokenization
+                  </h3>
+                  <p data-i18n="project_1_desc">
+                    Implementation of ERC-721 Smart Contract for tokenizing
+                    diplomas and achievement certificates into unique and secure
+                    NFT assets on a DApp/Web3 platform.
+                  </p>
+                  <div class="project-tech">
+                    <span>Solidity</span>
+                    <span>React.js</span>
+                    <span>Ethers.js</span>
+                  </div>
+                  <div class="project-btns">
+                    <a
+                      href="https://verichain-black.vercel.app"
+                      target="_blank"
+                      class="btn btn-info"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span data-i18n="project_btn_preview">Preview</span>
+                    </a>
+                    <a
+                      href="https://github.com/dipsyrara/TA-BE"
+                      target="_blank"
+                      class="btn btn-primary"
+                    >
+                      <i class="bi bi-code-slash"></i>
+                      <span data-i18n="project_btn_backend">Backend</span>
+                    </a>
+                    <a
+                      href="https://github.com/Zikra2244/TA-FE"
+                      target="_blank"
+                      class="btn btn-outline-primary"
+                    >
+                      <i class="bi bi-layout-sidebar-inset"></i>
+                      <span data-i18n="project_btn_frontend">Frontend</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <div class="project-card">
+                <span class="project-badge">React</span>
+                <div class="project-content">
+                  <h3 data-i18n="project_2_title">Interactive Quiz</h3>
+                  <p data-i18n="project_2_desc">
+                    React.js based website with elegant and friendly display,
+                    interactive quiz questions taken directly from the openTDB
+                    API in real-time.
+                  </p>
+                  <div class="project-tech">
+                    <span>React.js</span>
+                    <span>OpenTDB</span>
+                    <span>TailwindCSS</span>
+                  </div>
+                  <div class="project-btns">
+                    <a
+                      href="https://quiz-challange-k1gf.vercel.app/"
+                      target="_blank"
+                      class="btn btn-info"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span data-i18n="project_btn_preview">Preview</span>
+                    </a>
+                    <a
+                      href="https://github.com/Zikra2244/Quiz-Challange"
+                      target="_blank"
+                      class="btn btn-primary"
+                    >
+                      <i class="bi bi-code-slash"></i>
+                      <span data-i18n="project_btn_repo">Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
+              <div class="project-card">
+                <span class="project-badge">DevOps</span>
+                <div class="project-content">
+                  <h3 data-i18n="project_3_title">Automated Web Server</h3>
+                  <p data-i18n="project_3_desc">
+                    NgopiYuk Website Deployment using Docker and GitHub Actions
+                    CI/CD in Cloud infrastructure.
+                  </p>
+                  <div class="project-tech">
+                    <span>Docker</span>
+                    <span>Nginx</span>
+                    <span>GitHub Actions</span>
+                  </div>
+                  <div class="project-btns">
+                    <a
+                      href="https://ngopiyuk-frontend.vercel.app/"
+                      target="_blank"
+                      class="btn btn-info"
+                    >
+                      <i class="bi bi-eye"></i>
+                      <span data-i18n="project_btn_preview">Preview</span>
+                    </a>
+                    <a
+                      href="https://github.com/Zikra2244/ngopiyuk-backend"
+                      target="_blank"
+                      class="btn btn-primary"
+                    >
+                      <i class="bi bi-code-slash"></i>
+                      <span data-i18n="project_btn_backend">Backend</span>
+                    </a>
+                    <a
+                      href="https://github.com/Zikra2244/ngopiyuk-frontend"
+                      target="_blank"
+                      class="btn btn-outline-primary"
+                    >
+                      <i class="bi bi-layout-sidebar-inset"></i>
+                      <span data-i18n="project_btn_frontend">Frontend</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <div class="project-card">
+                <span class="project-badge">AI & Data</span>
+                <div class="project-content">
+                  <h3 data-i18n="project_4_title">AI School Agent Scraper</h3>
+                  <p data-i18n="project_4_desc">
+                    Automation of school data processing from CSV to Qdrant
+                    database using AI Agent for semantic search.
+                  </p>
+                  <div class="project-tech">
+                    <span>Python</span>
+                    <span>Qdrant</span>
+                    <span>CSV Processing</span>
+                  </div>
+                  <div class="project-btns">
+                    <a
+                      href="https://github.com/kanjeeng/sekolah-agentai-fe-custom"
+                      target="_blank"
+                      class="btn btn-primary"
+                    >
+                      <i class="bi bi-layout-sidebar-inset"></i>
+                      <span data-i18n="project_btn_frontend">Frontend</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
+              <div class="project-card">
+                <span class="project-badge">Mobile Development</span>
+                <div class="project-content">
+                  <h3 data-i18n="project_5_title">TukangKu</h3>
+                  <p data-i18n="project_5_desc">
+                    Mobile application for ordering handymen to help with social
+                    problems, especially damage or repairs to the architecture
+                    of Indonesian people's homes, such as leaking roofs, dead
+                    water, etc.
+                  </p>
+                  <div class="project-tech">
+                    <span>Flutter</span>
+                    <span>Dart</span>
+                    <span>Supabase</span>
+                  </div>
+                  <div class="project-btns">
+                    <a
+                      href="https://github.com/farellkresnanda/TUBES-APB.git"
+                      target="_blank"
+                      class="btn btn-primary"
+                    >
+                      <i class="bi bi-code-slash"></i>
+                      <span data-i18n="project_btn_repo">Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="project-card">
+                <span class="project-badge">Object-Oriented Based Website</span>
+                <div class="project-content">
+                  <h3 data-i18n="project_6_title">Survey Application</h3>
+                  <p data-i18n="project_6_desc">
+                    Comprehensive survey management system built with Spring
+                    Boot and React that allows survey creation, management, and
+                    analysis. Created for the Object-Oriented Programming course
+                    at Telkom University.
+                  </p>
+                  <div class="project-tech">
+                    <span>Spring Boot Java</span>
+                    <span>React</span>
+                    <span>Bootstrap 5</span>
+                  </div>
+                  <div class="project-btns">
+                    <a
+                      href="https://github.com/bagaskalih/TubesPBO"
+                      target="_blank"
+                      class="btn btn-primary"
+                    >
+                      <i class="bi bi-code-slash"></i>
+                      <span data-i18n="project_btn_repo">Repository</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-4"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <div class="project-card">
+                <span class="project-badge">Fullstack Web</span>
+                <div class="project-content">
+                  <h3 data-i18n="project_7_title">
+                    Smart Parent Portal Website
+                  </h3>
+                  <p data-i18n="project_7_desc">
+                    Portal website to make it easier for parents to find
+                    appropriate parenting techniques, the website contains
+                    parenting information portals from trusted sources, and
+                    contains milestone suggestions for managing children's daily
+                    schedules.
+                  </p>
+                  <div class="project-tech">
+                    <span>Next.js</span>
+                    <span>MySQL</span>
+                  </div>
+                  <div class="project-btns">
+                    <a href="#" target="_blank" class="btn btn-info">
+                      <i class="bi bi-eye"></i>
+                      <span data-i18n="project_btn_preview">Preview</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section bg-alt">
+        <div class="container">
+          <h2 class="section-title text-center" data-text="Experience">
+            <span data-i18n="experience_title">Internship</span>
+            <span data-i18n="experience_title_span">Experience</span>
+          </h2>
+          <div class="timeline">
+            <!-- Experience 1 -->
+            <div
+              class="timeline-item left"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3 class="timeline-title" data-i18n="exp_1_company">
+                    PT Kimia Farma Tbk – Central Jakarta, DKI Jakarta
+                  </h3>
+                  <span class="timeline-date" data-i18n="exp_1_date"
+                    >Jun 2025 – Sep 2025</span
+                  >
+                </div>
+                <span class="timeline-company" data-i18n="exp_1_position"
+                  >OpCo & IT Infrastructure Intern</span
+                >
+                <ul class="timeline-list">
+                  <li data-i18n="exp_1_desc_1">
+                    Involved in 10+ installation, configuration, and maintenance
+                    activities of Ubuntu-based operating systems to support the
+                    company's IT infrastructure operations.
+                  </li>
+                  <li data-i18n="exp_1_desc_2">
+                    Perform daily troubleshooting on hardware and software to
+                    ensure smooth operational IT systems.
+                  </li>
+                  <li data-i18n="exp_1_desc_3">
+                    Support internal IT operations across divisions, including
+                    system monitoring and handling technical issues
+                    responsively.
+                  </li>
+                  <li data-i18n="exp_1_desc_4">
+                    Develop professional skills such as team communication, time
+                    management, and problem solving in a national-scale
+                    corporate work environment.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="timeline-item right"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3 class="timeline-title" data-i18n="exp_2_company">
+                    Domosquare – Sleman, DI Yogyakarta
+                  </h3>
+                  <span class="timeline-date" data-i18n="exp_2_date"
+                    >Jan 2025 – Feb 2025</span
+                  >
+                </div>
+                <span class="timeline-company" data-i18n="exp_2_position"
+                  >DevOps & Hosting Support Intern</span
+                >
+                <ul class="timeline-list">
+                  <li data-i18n="exp_2_desc_1">
+                    Manage Ubuntu server administration, including basic system
+                    configuration and server service monitoring.
+                  </li>
+                  <li data-i18n="exp_2_desc_2">
+                    Perform web hosting and control panel management to support
+                    client needs and internal systems.
+                  </li>
+                  <li data-i18n="exp_2_desc_3">
+                    Handle 15+ customer technical troubleshooting cases related
+                    to hosting services directly and in a structured manner.
+                  </li>
+                  <li data-i18n="exp_2_desc_4">
+                    Support daily technical operations and gain practical
+                    understanding of production server environments and basic
+                    DevOps workflows.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="organization" class="section">
+        <div class="container">
+          <h2 class="section-title text-center" data-text="Organization">
+            <span data-i18n="org_title">Organization</span>
+            <span data-i18n="org_title_span">Experience</span>
+          </h2>
+          <div class="timeline">
+            <!-- Organization 1 -->
+            <div
+              class="timeline-item left"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3 class="timeline-title" data-i18n="org_1_title">
+                    HackAttack – National Hackathon Event
+                  </h3>
+                  <span class="timeline-date" data-i18n="org_1_date"
+                    >Jun 2025 – Dec 2025</span
+                  >
+                </div>
+                <span class="timeline-company" data-i18n="org_1_position"
+                  >Head of Logistics Division</span
+                >
+                <ul class="timeline-list">
+                  <li data-i18n="org_1_desc_1">
+                    Responsible for planning, managing, and distributing
+                    logistics for a national-scale hackathon event.
+                  </li>
+                  <li data-i18n="org_1_desc_2">
+                    Coordinate cross-divisional logistics teams to ensure
+                    availability of equipment, consumption, and technical needs
+                    of participants.
+                  </li>
+                  <li data-i18n="org_1_desc_3">
+                    Manage time and operational communication, ensuring all
+                    logistics needs are available on time and according to event
+                    standards.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="timeline-item right"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3 class="timeline-title" data-i18n="org_2_title">
+                    Central Computer Improvement (CCI) – Telkom University
+                  </h3>
+                  <span class="timeline-date" data-i18n="org_2_date"
+                    >Jan 2025 – Dec 2025</span
+                  >
+                </div>
+                <span class="timeline-company" data-i18n="org_2_position"
+                  >Member of Network Department Study Group</span
+                >
+                <ul class="timeline-list">
+                  <li data-i18n="org_2_desc_1">
+                    Actively participate in computer network study programs and
+                    practices, covering Cisco basic networking, Ubuntu system
+                    administration, and introduction to DevOps concepts.
+                  </li>
+                  <li data-i18n="org_2_desc_2">
+                    Involved in network and operating system configuration
+                    practices, including troubleshooting simulations and
+                    industry-based technical case studies.
+                  </li>
+                  <li data-i18n="org_2_desc_3">
+                    Collaborate in technical discussions and group study
+                    sessions to improve members' technical competence and
+                    problem-solving skills.
+                  </li>
+                  <li data-i18n="org_2_desc_4">
+                    Implement DevOps practices with docker containerization and
+                    CI/CD automation for JavaScript-based website projects.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="timeline-item left"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3 class="timeline-title" data-i18n="org_3_title">
+                    PANDA FIF – Telkom University
+                  </h3>
+                  <span class="timeline-date" data-i18n="org_3_date"
+                    >Oct 2024 – May 2025</span
+                  >
+                </div>
+                <span class="timeline-company" data-i18n="org_3_position"
+                  >Head of Consumption Division</span
+                >
+                <ul class="timeline-list">
+                  <li data-i18n="org_3_desc_1">
+                    Develop planning and distribution strategies for consumption
+                    to support various organizational activities.
+                  </li>
+                  <li data-i18n="org_3_desc_2">
+                    Manage consumption budget and coordinate with vendors to
+                    ensure cost efficiency and service quality.
+                  </li>
+                  <li data-i18n="org_3_desc_3">
+                    Ensure timely and equitable availability of consumption,
+                    thus supporting the smooth running of all event series.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="timeline-item right"
+              data-aos="fade-left"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3 class="timeline-title" data-i18n="org_4_title">
+                    Information Technology Student Association – Telkom
+                    University
+                  </h3>
+                  <span class="timeline-date" data-i18n="org_4_date"
+                    >Mar 2024 – May 2025</span
+                  >
+                </div>
+                <span class="timeline-company" data-i18n="org_4_position"
+                  >Public Relations Staff</span
+                >
+                <ul class="timeline-list">
+                  <li data-i18n="org_4_desc_1">
+                    Manage external organizational communication, build
+                    relationships with internal and external institutions within
+                    Telkom University.
+                  </li>
+                  <li data-i18n="org_4_desc_2">
+                    Serve as Head of Comparative Study Work Program,
+                    coordinating activity planning, inter-institutional
+                    communication, and event implementation.
+                  </li>
+                  <li data-i18n="org_4_desc_3">
+                    Arrange team coordination and communication flow to expand
+                    collaborative networks and improve organizational image.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="timeline-item left"
+              data-aos="fade-right"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3 class="timeline-title" data-i18n="org_5_title">
+                    NETWORK DIVISION MEMBER
+                  </h3>
+                  <span class="timeline-date" data-i18n="org_5_date"
+                    >Jan 2025</span
+                  >
+                </div>
+                <span class="timeline-company" data-i18n="org_5_position"
+                  >Student Activity Unit Central Computer Improvement</span
+                >
+                <ul class="timeline-list">
+                  <li data-i18n="org_5_desc_1">
+                    Conduct learning and training in the networking field
+                  </li>
+                  <li data-i18n="org_5_desc_2">
+                    Active in activities held by the Central Computer
+                    Improvement Student Activity Unit
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section bg-alt">
+        <div class="container">
+          <h2 class="section-title text-center" data-text="Education">
+            <span data-i18n="education_title">Education</span>
+            <span data-i18n="education_title_span">& Training</span>
+          </h2>
+          <div class="row justify-content-center g-4">
+            <div class="col-md-6" data-aos="fade-up" data-aos-duration="1000">
+              <div class="education-card">
+                <h3 data-i18n="education_formal">Formal Education</h3>
+                <div class="education-item">
+                  <h4 data-i18n="edu_1_school">Telkom University</h4>
+                  <p class="education-year" data-i18n="edu_1_year">
+                    2022 - Present
+                  </p>
+                  <p data-i18n="edu_1_major">
+                    Bachelor of Information Technology
+                  </p>
+                </div>
+                <div class="education-item">
+                  <h4 data-i18n="edu_2_school">SMAN 1 Bukittinggi</h4>
+                  <p class="education-year" data-i18n="edu_2_year">
+                    2019 - 2022
+                  </p>
+                  <p data-i18n="edu_2_major">Science Major</p>
+                </div>
+                <div class="education-item">
+                  <h4 data-i18n="edu_3_school">SMPN 1 Bukittinggi</h4>
+                  <p class="education-year" data-i18n="edu_3_year">
+                    2016 - 2019
+                  </p>
+                </div>
+                <div class="education-item">
+                  <h4 data-i18n="edu_4_school">
+                    SDN 08 Tarok Dipo Bukittinggi
+                  </h4>
+                  <p class="education-year" data-i18n="edu_4_year">
+                    2010 - 2016
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <div class="education-card">
+                <h3 data-i18n="education_training">Training & Certification</h3>
+                <div class="education-item">
+                  <h4 data-i18n="training_1_name">English Course</h4>
+                  <p class="education-year" data-i18n="training_1_year">
+                    Jul 2024 - Aug 2024
+                  </p>
+                  <p data-i18n="training_1_org">Language Center</p>
+                </div>
+                <div class="education-item">
+                  <h4 data-i18n="training_2_name">Digital Marketing</h4>
+                  <p class="education-year" data-i18n="training_2_year">
+                    Feb 2025 - Mar 2025
+                  </p>
+                  <p data-i18n="training_2_org">Meta Ada</p>
+                </div>
+                <div class="education-item">
+                  <h4 data-i18n="training_3_name">AI Training</h4>
+                  <p class="education-year" data-i18n="training_3_year">
+                    May 2025
+                  </p>
+                  <p data-i18n="training_3_org">Elevate Indonesia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="contact" class="footer">
+        <div class="container">
+          <h2
+            class="text-center mb-5"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <span data-i18n="contact_title">Contact</span>
+            <span data-i18n="contact_title_span">Me</span>
+          </h2>
+          <div class="row justify-content-center g-4">
+            <div
+              class="col-md-4 text-center"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <div class="contact-item">
+                <div class="contact-icon mb-3">
+                  <i class="bi bi-envelope-fill"></i>
+                </div>
+                <h4 class="mb-2" data-i18n="contact_email">Email</h4>
+                <a href="mailto:muhammadzikra@gmail.com"
+                  >muhammadzikraf@gmail.com</a
+                >
+              </div>
+            </div>
+            <div
+              class="col-md-4 text-center"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              <div class="contact-item">
+                <div class="contact-icon mb-3">
+                  <i class="bi bi-telephone-fill"></i>
+                </div>
+                <h4 class="mb-2" data-i18n="contact_phone">Phone</h4>
+                <a href="tel:+6282166010233">+6282169016233</a>
+              </div>
+            </div>
+            <div
+              class="col-md-4 text-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
+              <div class="contact-item">
+                <div class="contact-icon mb-3">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <h4 class="mb-2" data-i18n="contact_address">Address</h4>
+                <p data-i18n="address_text">
+                  Adhyaksa 6 No.8, Sukapura, Dayeuhkolot, Bandung, Indonesia,
+                  40287
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="social-links mt-5 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <a
+              href="https://linkedin.com/in/muhammad-zikra-fadly-827774365"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/Zikra2244"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/zikrafdly/?hl=en"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/broku1235/"
+              class="social-icon"
+              target="_blank"
+            >
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+          <hr class="my-5" />
+          <p class="text-center mb-0">
+            &copy; 2025 Muhammad Zikra Fadly.
+            <span data-i18n="copyright">All rights reserved.</span>
+          </p>
+        </div>
+      </footer>
+
+      <button class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+      </button>
+
+      <!-- JavaScript -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <script src="js/translations.js"></script>
+      <script src="js/script.js"></script>
+    </main>
+  </body>
+</html>
