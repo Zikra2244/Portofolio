@@ -427,34 +427,3 @@ function updateContent() {
     }
   });
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  if (!localStorage.getItem("language")) {
-    localStorage.setItem("language", "en");
-  }
-  currentLang = localStorage.getItem("language");
-  document.documentElement.lang = currentLang;
-  updateContent();
-
-  const navbar = document.querySelector(".navbar-nav");
-  if (navbar && !document.getElementById("language-switcher-container")) {
-    const langContainer = document.createElement("li");
-    langContainer.className = "nav-item dropdown";
-    langContainer.id = "language-switcher-container";
-    langContainer.innerHTML = `
-      <a class="nav-link dropdown-toggle language-dropdown" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        <span class="language-flag">${currentLang === "en" ? "🇬🇧" : "🇮🇩"}</span>
-        <span class="language-text">${currentLang === "en" ? "ENG" : "ID"}</span>
-      </a>
-      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-        <li><a class="dropdown-item ${currentLang === "en" ? "active" : ""}" href="#" onclick="setLanguage('en'); return false;">
-          <span class="language-flag">🇬🇧</span> ENG
-        </a></li>
-        <li><a class="dropdown-item ${currentLang === "id" ? "active" : ""}" href="#" onclick="setLanguage('id'); return false;">
-          <span class="language-flag">🇮🇩</span> ID
-        </a></li>
-      </ul>
-    `;
-    navbar.appendChild(langContainer);
-  }
-});

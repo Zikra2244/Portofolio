@@ -103,7 +103,36 @@
               >
             </li>
           </ul>
-          <button id="theme-toggle" class="btn theme-toggle-btn ms-3">
+
+          <!-- Language Switcher - SATU dropdown dengan icon -->
+          <div class="language-wrapper ms-2">
+            <div class="language-selector" id="languageSelector">
+              <button class="language-btn" id="langToggle">
+                <i class="bi bi-globe2"></i>
+                <span class="language-text" id="currentLang">EN</span>
+                <i class="bi bi-chevron-down language-arrow"></i>
+              </button>
+
+              <div class="language-options" id="langOptions">
+                <!-- English Option -->
+                <div class="language-option" data-lang="en">
+                  <span class="language-option-icon">🌐</span>
+                  <span class="language-option-text">English</span>
+                  <span class="language-option-short">EN</span>
+                </div>
+
+                <!-- Indonesia Option -->
+                <div class="language-option" data-lang="id">
+                  <span class="language-option-icon">🇮🇩</span>
+                  <span class="language-option-text">Indonesia</span>
+                  <span class="language-option-short">ID</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Theme Toggle Button -->
+          <button id="theme-toggle" class="btn theme-toggle-btn ms-2">
             <i class="bi bi-moon-stars-fill"></i>
           </button>
         </div>
@@ -122,27 +151,50 @@
             <div class="typed-text mb-4">
               <span id="typed"></span>
             </div>
-            <div class="hero-btns">
+
+            <!-- MAIN ACTIONS - Hanya 2 tombol utama + CV hook -->
+            <div class="hero-actions d-flex flex-wrap align-items-center gap-3">
               <a
                 href="#contact"
-                class="btn btn-primary btn-lg pulse"
+                class="btn btn-primary btn-lg"
                 data-i18n="hero_btn_contact"
-                >Contact Me</a
               >
+                <i class="bi bi-chat-dots me-2"></i>Contact Me
+              </a>
               <a
                 href="#projects"
                 class="btn btn-outline-primary btn-lg"
                 data-i18n="hero_btn_projects"
-                >View Projects</a
               >
+                <i class="bi bi-grid me-2"></i>View Projects
+              </a>
+
+              <!-- CV Hook -->
               <a
-                href="#experience"
-                class="btn btn-outline-primary btn-lg"
-                data-i18n="hero_btn_experience"
-                >View Experience</a
+                href="cv/CV_Muhammad Zikra Fadly.pdf"
+                target="_blank"
+                class="cv-hook"
+                id="preview-cv"
               >
+                <span class="cv-icon">
+                  <i class="bi bi-file-pdf"></i>
+                </span>
+                <span class="cv-text" data-i18n="cv_preview">CV</span>
+                <span class="cv-badge">PDF</span>
+              </a>
+            </div>
+
+            <!-- Social proof badges -->
+            <div class="hero-meta mt-4">
+              <span class="badge bg-light text-dark me-2">
+                <i class="bi bi-award text-primary me-1"></i> 5+ Projects
+              </span>
+              <span class="badge bg-light text-dark">
+                <i class="bi bi-people text-primary me-1"></i> 5+ Organizations
+              </span>
             </div>
           </div>
+
           <div
             class="col-lg-5"
             data-aos="fade-left"
@@ -162,6 +214,7 @@
     </header>
 
     <main>
+      <!-- About Section -->
       <section id="about" class="section">
         <div class="container">
           <h2 class="section-title text-center" data-text="About">
@@ -174,7 +227,17 @@
             data-aos-duration="1000"
           >
             <p class="lead text-center" data-i18n="about_text">
-              Information Technology student .....
+              Information Technology student with an interest and competency in
+              web development, mobile development, and IT infrastructure.
+              Experienced in designing several web and mobile projects, managing
+              Linux-based servers, web hosting, control panels, and DevOps
+              support, and experienced in direct involvement in system
+              installation, configuration, and maintenance. Active in
+              national-scale organizations and committees, with leadership roles
+              that hone coordination, logistics management, cross-team
+              communication, and problem-solving skills. Possesses a structured
+              work pattern, adapts to dynamic environments, and effectively
+              integrates technical skills with operational needs.
             </p>
             <div
               class="stats-container"
@@ -189,7 +252,7 @@
                 </div>
               </div>
               <div class="stat-item">
-                <div class="stat-number">5+</div>
+                <div class="stat-number">7+</div>
                 <div class="stat-label" data-i18n="about_stats_2">Projects</div>
               </div>
             </div>
@@ -197,6 +260,7 @@
         </div>
       </section>
 
+      <!-- Skills Section -->
       <section id="skills" class="section bg-alt">
         <div class="container">
           <h2 class="section-title text-center" data-text="Skills">
@@ -266,6 +330,7 @@
         </div>
       </section>
 
+      <!-- Projects Section -->
       <section id="projects" class="section">
         <div class="container">
           <h2 class="section-title text-center" data-text="Projects">
@@ -273,6 +338,7 @@
             <span data-i18n="projects_title_span">Projects</span>
           </h2>
           <div class="row g-4">
+            <!-- Project 1 -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
@@ -326,6 +392,7 @@
               </div>
             </div>
 
+            <!-- Project 2 -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
@@ -368,6 +435,7 @@
               </div>
             </div>
 
+            <!-- Project 3 -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
@@ -417,6 +485,7 @@
               </div>
             </div>
 
+            <!-- Project 4 -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
@@ -450,6 +519,7 @@
               </div>
             </div>
 
+            <!-- Project 5 -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
@@ -461,10 +531,8 @@
                 <div class="project-content">
                   <h3 data-i18n="project_5_title">TukangKu</h3>
                   <p data-i18n="project_5_desc">
-                    Mobile application for ordering handymen to help with social
-                    problems, especially damage or repairs to the architecture
-                    of Indonesian people's homes, such as leaking roofs, dead
-                    water, etc.
+                    Mobile application for ordering handymen to help with home
+                    repairs such as leaking roofs, dead water, etc.
                   </p>
                   <div class="project-tech">
                     <span>Flutter</span>
@@ -485,6 +553,7 @@
               </div>
             </div>
 
+            <!-- Project 6 -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
@@ -497,8 +566,7 @@
                   <p data-i18n="project_6_desc">
                     Comprehensive survey management system built with Spring
                     Boot and React that allows survey creation, management, and
-                    analysis. Created for the Object-Oriented Programming course
-                    at Telkom University.
+                    analysis.
                   </p>
                   <div class="project-tech">
                     <span>Spring Boot Java</span>
@@ -519,6 +587,7 @@
               </div>
             </div>
 
+            <!-- Project 7 -->
             <div
               class="col-md-6 col-lg-4"
               data-aos="fade-up"
@@ -533,10 +602,8 @@
                   </h3>
                   <p data-i18n="project_7_desc">
                     Portal website to make it easier for parents to find
-                    appropriate parenting techniques, the website contains
-                    parenting information portals from trusted sources, and
-                    contains milestone suggestions for managing children's daily
-                    schedules.
+                    appropriate parenting techniques, and contains milestone
+                    suggestions.
                   </p>
                   <div class="project-tech">
                     <span>Next.js</span>
@@ -559,6 +626,7 @@
         </div>
       </section>
 
+      <!-- Experience Section -->
       <section id="experience" class="section bg-alt">
         <div class="container">
           <h2 class="section-title text-center" data-text="Experience">
@@ -587,8 +655,7 @@
                 <ul class="timeline-list">
                   <li data-i18n="exp_1_desc_1">
                     Involved in 10+ installation, configuration, and maintenance
-                    activities of Ubuntu-based operating systems to support the
-                    company's IT infrastructure operations.
+                    activities of Ubuntu-based operating systems.
                   </li>
                   <li data-i18n="exp_1_desc_2">
                     Perform daily troubleshooting on hardware and software to
@@ -596,18 +663,17 @@
                   </li>
                   <li data-i18n="exp_1_desc_3">
                     Support internal IT operations across divisions, including
-                    system monitoring and handling technical issues
-                    responsively.
+                    system monitoring.
                   </li>
                   <li data-i18n="exp_1_desc_4">
                     Develop professional skills such as team communication, time
-                    management, and problem solving in a national-scale
-                    corporate work environment.
+                    management, and problem solving.
                   </li>
                 </ul>
               </div>
             </div>
 
+            <!-- Experience 2 -->
             <div
               class="timeline-item right"
               data-aos="fade-left"
@@ -632,11 +698,11 @@
                   </li>
                   <li data-i18n="exp_2_desc_2">
                     Perform web hosting and control panel management to support
-                    client needs and internal systems.
+                    client needs.
                   </li>
                   <li data-i18n="exp_2_desc_3">
                     Handle 15+ customer technical troubleshooting cases related
-                    to hosting services directly and in a structured manner.
+                    to hosting services.
                   </li>
                   <li data-i18n="exp_2_desc_4">
                     Support daily technical operations and gain practical
@@ -650,6 +716,7 @@
         </div>
       </section>
 
+      <!-- Organization Section -->
       <section id="organization" class="section">
         <div class="container">
           <h2 class="section-title text-center" data-text="Organization">
@@ -687,13 +754,13 @@
                   </li>
                   <li data-i18n="org_1_desc_3">
                     Manage time and operational communication, ensuring all
-                    logistics needs are available on time and according to event
-                    standards.
+                    logistics needs are available on time.
                   </li>
                 </ul>
               </div>
             </div>
 
+            <!-- Organization 2 -->
             <div
               class="timeline-item right"
               data-aos="fade-left"
@@ -719,13 +786,11 @@
                   </li>
                   <li data-i18n="org_2_desc_2">
                     Involved in network and operating system configuration
-                    practices, including troubleshooting simulations and
-                    industry-based technical case studies.
+                    practices, including troubleshooting simulations.
                   </li>
                   <li data-i18n="org_2_desc_3">
                     Collaborate in technical discussions and group study
-                    sessions to improve members' technical competence and
-                    problem-solving skills.
+                    sessions to improve members' technical competence.
                   </li>
                   <li data-i18n="org_2_desc_4">
                     Implement DevOps practices with docker containerization and
@@ -735,6 +800,7 @@
               </div>
             </div>
 
+            <!-- Organization 3 -->
             <div
               class="timeline-item left"
               data-aos="fade-right"
@@ -769,6 +835,7 @@
               </div>
             </div>
 
+            <!-- Organization 4 -->
             <div
               class="timeline-item right"
               data-aos="fade-left"
@@ -807,6 +874,7 @@
               </div>
             </div>
 
+            <!-- Organization 5 -->
             <div
               class="timeline-item left"
               data-aos="fade-right"
@@ -840,6 +908,7 @@
         </div>
       </section>
 
+      <!-- Education Section -->
       <section id="education" class="section bg-alt">
         <div class="container">
           <h2 class="section-title text-center" data-text="Education">
@@ -902,7 +971,7 @@
                   <p class="education-year" data-i18n="training_2_year">
                     Feb 2025 - Mar 2025
                   </p>
-                  <p data-i18n="training_2_org">Meta Ada</p>
+                  <p data-i18n="training_2_org">Meta Ads</p>
                 </div>
                 <div class="education-item">
                   <h4 data-i18n="training_3_name">AI Training</h4>
@@ -916,117 +985,119 @@
           </div>
         </div>
       </section>
+    </main>
 
-      <footer id="contact" class="footer">
-        <div class="container">
-          <h2
-            class="text-center mb-5"
+    <!-- Contact Section / Footer -->
+    <footer id="contact" class="footer">
+      <div class="container">
+        <h2
+          class="text-center mb-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <span data-i18n="contact_title">Contact</span>
+          <span data-i18n="contact_title_span">Me</span>
+        </h2>
+        <div class="row justify-content-center g-4">
+          <div
+            class="col-md-4 text-center"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            <span data-i18n="contact_title">Contact</span>
-            <span data-i18n="contact_title_span">Me</span>
-          </h2>
-          <div class="row justify-content-center g-4">
-            <div
-              class="col-md-4 text-center"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-            >
-              <div class="contact-item">
-                <div class="contact-icon mb-3">
-                  <i class="bi bi-envelope-fill"></i>
-                </div>
-                <h4 class="mb-2" data-i18n="contact_email">Email</h4>
-                <a href="mailto:muhammadzikra@gmail.com"
-                  >muhammadzikraf@gmail.com</a
-                >
+            <div class="contact-item">
+              <div class="contact-icon mb-3">
+                <i class="bi bi-envelope-fill"></i>
               </div>
-            </div>
-            <div
-              class="col-md-4 text-center"
-              data-aos="fade-up"
-              data-aos-delay="100"
-              data-aos-duration="1000"
-            >
-              <div class="contact-item">
-                <div class="contact-icon mb-3">
-                  <i class="bi bi-telephone-fill"></i>
-                </div>
-                <h4 class="mb-2" data-i18n="contact_phone">Phone</h4>
-                <a href="tel:+6282166010233">+6282169016233</a>
-              </div>
-            </div>
-            <div
-              class="col-md-4 text-center"
-              data-aos="fade-up"
-              data-aos-delay="200"
-              data-aos-duration="1000"
-            >
-              <div class="contact-item">
-                <div class="contact-icon mb-3">
-                  <i class="bi bi-geo-alt-fill"></i>
-                </div>
-                <h4 class="mb-2" data-i18n="contact_address">Address</h4>
-                <p data-i18n="address_text">
-                  Adhyaksa 6 No.8, Sukapura, Dayeuhkolot, Bandung, Indonesia,
-                  40287
-                </p>
-              </div>
+              <h4 class="mb-2" data-i18n="contact_email">Email</h4>
+              <a href="mailto:muhammadzikra@gmail.com"
+                >muhammadzikraf@gmail.com</a
+              >
             </div>
           </div>
           <div
-            class="social-links mt-5 text-center"
+            class="col-md-4 text-center"
             data-aos="fade-up"
+            data-aos-delay="100"
             data-aos-duration="1000"
           >
-            <a
-              href="https://linkedin.com/in/muhammad-zikra-fadly-827774365"
-              class="social-icon"
-              target="_blank"
-            >
-              <i class="bi bi-linkedin"></i>
-            </a>
-            <a
-              href="https://github.com/Zikra2244"
-              class="social-icon"
-              target="_blank"
-            >
-              <i class="bi bi-github"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/zikrafdly/?hl=en"
-              class="social-icon"
-              target="_blank"
-            >
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a
-              href="https://www.facebook.com/broku1235/"
-              class="social-icon"
-              target="_blank"
-            >
-              <i class="bi bi-facebook"></i>
-            </a>
+            <div class="contact-item">
+              <div class="contact-icon mb-3">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <h4 class="mb-2" data-i18n="contact_phone">Phone</h4>
+              <a href="tel:+6282166010233">+6282169016233</a>
+            </div>
           </div>
-          <hr class="my-5" />
-          <p class="text-center mb-0">
-            &copy; 2025 Muhammad Zikra Fadly.
-            <span data-i18n="copyright">All rights reserved.</span>
-          </p>
+          <div
+            class="col-md-4 text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <div class="contact-item">
+              <div class="contact-icon mb-3">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <h4 class="mb-2" data-i18n="contact_address">Address</h4>
+              <p data-i18n="address_text">
+                Sukapura, Dayeuhkolot, Bandung Regency, West Java, Indonesia,
+                40287
+              </p>
+            </div>
+          </div>
         </div>
-      </footer>
+        <div
+          class="social-links mt-5 text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <a
+            href="https://linkedin.com/in/muhammad-zikra-fadly-827774365"
+            class="social-icon"
+            target="_blank"
+          >
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/Zikra2244"
+            class="social-icon"
+            target="_blank"
+          >
+            <i class="bi bi-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/zikrafdly/?hl=en"
+            class="social-icon"
+            target="_blank"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/broku1235/"
+            class="social-icon"
+            target="_blank"
+          >
+            <i class="bi bi-facebook"></i>
+          </a>
+        </div>
+        <hr class="my-5" />
+        <p class="text-center mb-0">
+          &copy; 2025 Muhammad Zikra Fadly.
+          <span data-i18n="copyright">All rights reserved.</span>
+        </p>
+      </div>
+    </footer>
 
-      <button class="back-to-top" aria-label="Back to top">
-        <i class="bi bi-arrow-up"></i>
-      </button>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
 
-      <!-- JavaScript -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-      <script src="js/translations.js"></script>
-      <script src="js/script.js"></script>
-    </main>
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
