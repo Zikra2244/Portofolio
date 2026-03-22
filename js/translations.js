@@ -31,8 +31,9 @@
     skills_tech_3:
       "Programming languages HTML, CSS, JavaScript, Java, PHP, Python, Go, Dart, Solidity.",
     skills_tech_4: "Frontend frameworks React JS, Vue JS, Next JS.",
-    skills_tech_5: "Backend frameworks Laravel, Express.js, Spring Boot Java.",
-    skills_tech_6: "Mobile development framework Flutter (Dart).",
+    skills_tech_5:
+      "Backend frameworks Laravel, Express.js, Spring Boot Java, Django.",
+    skills_tech_6: "Mobile development framework Flutter (Dart), React Native.",
     skills_tech_7:
       "Relational databases MySQL, PostgreSQL, SQL Server, Oracle Database, cloud database Supabase.",
     skills_tech_8:
@@ -70,6 +71,8 @@
     project_7_title: "Smart Parent Portal Website",
     project_7_desc:
       "Portal website to make it easier for parents to find appropriate parenting techniques, and contains milestone suggestions.",
+    project_8_desc:
+      "A simple checkout system built using Django and the Django REST Framework, fully integrated with the Midtrans Sandbox.",
     project_btn_preview: "Preview",
     project_btn_backend: "Backend",
     project_btn_frontend: "Frontend",
@@ -221,8 +224,9 @@
     skills_tech_3:
       "Bahasa pemrograman HTML, CSS, JavaScript, Java, PHP, Python, Go, Dart, Solidity.",
     skills_tech_4: "Frontend frameworks React JS, Vue JS, Next JS.",
-    skills_tech_5: "Backend frameworks Laravel, Express.js, Spring Boot Java.",
-    skills_tech_6: "Mobile development framework Flutter (Dart).",
+    skills_tech_5:
+      "Backend frameworks Laravel, Express.js, Spring Boot Java, Django.",
+    skills_tech_6: "Mobile development framework Flutter (Dart), React Native.",
     skills_tech_7:
       "Relational databases MySQL, PostgreSQL, SQL Server, Oracle Database, cloud database Supabase.",
     skills_tech_8:
@@ -260,6 +264,8 @@
     project_7_title: "Smart Parent Portal Website",
     project_7_desc:
       "Portal website untuk memudahkan orang tua mencari teknik pengasuhan yang tepat, dilengkapi saran milestone.",
+    project_8_desc:
+      "Sebuah sistem checkout sederhana yang dibangun menggunakan Django dan Django REST Framework, terintegrasi penuh dengan Midtrans Sandbox.",
     project_btn_preview: "Preview",
     project_btn_backend: "Backend",
     project_btn_frontend: "Frontend",
